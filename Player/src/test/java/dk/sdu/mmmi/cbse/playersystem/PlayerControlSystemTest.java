@@ -19,11 +19,6 @@ public class PlayerControlSystemTest {
     private World world;
     private IGamePluginService playerPlugin;
 
-
-    public void PlayerControlSystem(){
-        assertTrue(false);
-    }
-
     @BeforeEach
     void setup(){
         gameData = new GameData();
@@ -41,6 +36,4 @@ public class PlayerControlSystemTest {
             assertEquals(world.getEntities().stream().collect(Collectors.toList()).toArray().length, 1);
         }
     }
-
-
 }
